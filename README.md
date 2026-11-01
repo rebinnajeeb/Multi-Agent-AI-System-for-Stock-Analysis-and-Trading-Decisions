@@ -34,14 +34,14 @@ AGENT 1 writes the REPORT
    │  👉 WHAT HAPPENS HERE: Now the Analyst has real numbers. It uses the
    │     LLM to turn raw data into a neat bullet-point report:
    │     "Price: $213, Change: +1.2%, trend looks positive..." etc.
-   │     This finished report becomes the OUTPUT of Task 1. ↓
+   │     This finished report becomes the OUTPUT of Task 1. ↓ 
    ▼
 TASK 2  →  trade_task.py
    │
    │  👉 WHAT HAPPENS HERE: Second work order — "Based on the data for
    │     APPLE, decide Buy, Sell, or Hold." Because this task runs AFTER
    │     Task 1, CrewAI automatically attaches Task 1's report as context.
-   │     So this task already carries the Analyst's findings. ↓
+   │     So this task already carries the Analyst's findings. ↓ #instructions
    ▼
 AGENT 2  →  trader_agent.py
    │
